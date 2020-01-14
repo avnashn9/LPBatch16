@@ -16,13 +16,14 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class LoginTests {
+public class CatalogTests {
 
 	private WebDriver driver;
 	private String baseUrl;
+	private CatalogPOM CatalogPOM;
 	private LoginPOM loginPOM;
 	private static Properties properties;
-	private ScreenShot screenShot;
+	
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -35,9 +36,10 @@ public class LoginTests {
 	public void setUp() throws Exception {
 	//	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	  driver = DriverFactory.getDriver(DriverNames.FIREFOX);
-		loginPOM = new LoginPOM(driver); 
+	  CatalogPOM = new CatalogPOM(driver); 
+	  loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+	//	screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
 	}
@@ -51,14 +53,14 @@ public class LoginTests {
 	*/
 	
 	@Test
-	public void validLoginTest()   
+	public void validCatalogTest()   
 	{
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn();
-	//	CatalogPOM.clickMenu();
-	  //  CatalogPOM.clickCatalog(); 
-	  //  loginPOM.clickCategories(); 
+    	CatalogPOM.clickMenu();
+	    CatalogPOM.clickCatalog(); 
+	    CatalogPOM.clickCategories(); 
 		//screenShot.captureScreenShot("First");	
 		//System.out.println("Print some value");
 	}

@@ -134,12 +134,10 @@ public class AddCatProdPOM {
     }
 
 	public void clickCatalog(){
-    this.Catalog.click(); 
-    GenericMethods.linkVisibility(Catalog);
+        GenericMethods.linkVisibility(Catalog);
 	}
 
     public void clickCategories() {
-		this.Categories.click(); 
 		 GenericMethods.linkVisibility(Categories);
    }
     
@@ -148,37 +146,27 @@ public class AddCatProdPOM {
    }
     
     public void enterCatName(String catname) {
-		this.catname.clear();
-		this.catname.sendKeys(catname);
 		GenericMethods.txtBoxVisibility(this.catname,catname);
     }	
 	
     public void enterCatDesc(String catdesc) {
-			this.catdesc.clear();
-			this.catdesc.sendKeys(catdesc);
-			GenericMethods.txtBoxVisibility(this.catdesc,catdesc);
+		GenericMethods.txtBoxVisibility(this.catdesc,catdesc);
 	}
 	
 	public void enterMetaTag(String metatag) {
-		this.metatag.clear();
-		this.metatag.sendKeys(metatag);
 		GenericMethods.txtBoxVisibility(this.metatag,metatag);
 	}
 	
 	public void enterMetaTagDesc(String metatagdesc) {
-		this.metatagdesc.clear();
-		this.metatagdesc.sendKeys(metatagdesc);
 		GenericMethods.txtBoxVisibility(this.metatagdesc,metatagdesc);
       }
 	
 	  public void clickData() {
-			this.Data.click(); 
-			GenericMethods.linkVisibility(Data);
+		GenericMethods.linkVisibility(Data);
 	   }
 	
 	  public void clickDesign() {
-			this.Design.click(); 
-			GenericMethods.linkVisibility(Design);
+		GenericMethods.linkVisibility(Design);
 	   }
 	  
 	  public void clickSave() {
@@ -186,8 +174,7 @@ public class AddCatProdPOM {
 	   }
 
 	  public void clickProducts(){
-		    this.Products.click(); 
-		    GenericMethods.linkVisibility(Products);
+	    GenericMethods.linkVisibility(Products);
 			}
 	  
 	  public void clickAddProdNew() {
@@ -195,87 +182,68 @@ public class AddCatProdPOM {
 	 	 }
 	  
 	  public void enterProdName(String prodname) {
-			this.prodname.clear();
-			this.prodname.sendKeys(prodname);
 			GenericMethods.txtBoxVisibility(this.prodname,prodname);
 	    }	
 		
 	   public void enterProdMetaTag(String prodmetatag) {
-			this.prodmetatag.clear();
-			this.prodmetatag.sendKeys(prodmetatag);
 			GenericMethods.txtBoxVisibility(this.prodmetatag,prodmetatag);
 		}
 	   
 	   public void clickProdModelData()    {
-			this.ProdData.click(); 
 			GenericMethods.linkVisibility(ProdData);
 
 	   }
 	   
 	   public void enterProdModel(String ProdModelData) {
-			this.ProdModelData.clear();
-			this.ProdModelData.sendKeys(ProdModelData);
 			GenericMethods.txtBoxVisibility(this.ProdModelData,ProdModelData);
 		}
 	    
-	   public void clickLinks() {
-			this.Links.click(); 
+	   public void clickLinks() { 
 			GenericMethods.linkVisibility(Links);
 	   }
 	   
 	   public void clickProdCategories() throws InterruptedException {
-			this.ProdCategories.click(); 
 			GenericMethods.linkVisibility(Catalog);
 			Thread.sleep(10000);
 		}
 	  
 	   public void displayCategory(String ProdCategories) throws InterruptedException {
-			this.ProdCategories.clear();
-			this.ProdCategories.sendKeys(ProdCategories);
 			GenericMethods.txtBoxVisibility(this.ProdCategories,ProdCategories);
 			Thread.sleep(10000);
 		}
 	   
 	   public void clickAttribute() throws InterruptedException {
-			this.Attribute.click(); 
 			GenericMethods.linkVisibility(Attribute);
 			Thread.sleep(10000);
 	   }
 	
 	   
 	   public void clickOption() {
-			this.Option.click(); 
 			GenericMethods.linkVisibility(Option);
 	   }
 	   
 	   public void clickRecurring() {
-			this.Recurring.click(); 
 			GenericMethods.linkVisibility(Recurring);
 	   }
 	   
 	   public void clickDiscount() {
-			this.Discount.click();
 			GenericMethods.linkVisibility(Discount);
 	   }
 	   
 	   
 	   public void clickSpecial() {
-			this.Special.click(); 
 			GenericMethods.linkVisibility(Special);
 	   }
 	   
 	   public void clickImage() {
-			this.Image.click(); 
 			GenericMethods.linkVisibility(Image);
 	   }
 	   
 	   public void clickRewardPoints() {
-			this.RewardPoints.click(); 
 			GenericMethods.linkVisibility(RewardPoints);
 	   }
 	   
 	   public void clickProdDesign() {
-			this.ProdDesign.click(); 
 			GenericMethods.linkVisibility(ProdDesign);
 	   }
 	   

@@ -85,8 +85,7 @@ public class AddMultipleCatTest {
 		addmultipleCatProdPOM.enterRewardPoints("10");
 		addmultipleCatProdPOM.clickProdDesign();	
 		addmultipleCatProdPOM.clickProdSave();	
-		
-		
+				
 	}
 	
 }

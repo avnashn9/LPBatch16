@@ -110,8 +110,7 @@ public class AddMultipleCatProdPOM {
     
     @FindBy(xpath="//button[@class='btn btn-primary']")
   	private WebElement ProdSave; 
-     
-  
+      
     
    public void sendUserName(String userName) {
 		this.userName.clear();
@@ -184,17 +183,14 @@ public class AddMultipleCatProdPOM {
 		   	   Robot robot = new Robot();
 		   	   robot.keyPress(KeyEvent.VK_TAB);
 		   	   robot.keyPress(KeyEvent.VK_ENTER);
-		   		
-	   }
-	   
-	   
+		    }
+	    
 	   
 	   public void clickAttribute() throws InterruptedException {
 			GenericMethods.linkVisibility(Attribute);
 			Thread.sleep(10000);
 	   }
-	
-	   
+		   
 	   public void clickOption() {
 			GenericMethods.linkVisibility(Option);
 	   }
